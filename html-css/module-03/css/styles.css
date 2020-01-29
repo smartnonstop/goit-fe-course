@@ -59,6 +59,10 @@ img {
 
 /* Posts */
 
+.posts {
+  padding-bottom: 70px;
+}
+
 .post-list {
   list-style: none;
   padding: 0;
@@ -91,13 +95,13 @@ img {
   line-height: 16px;
   color: #b4ad9e;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .post-name {
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 36px;
+  margin: 0 0 36px;
 }
 
 .post-description {
@@ -111,7 +115,8 @@ img {
 }
 
 .load-more-btn {
-  margin: 0 0 70px 0;
+  display: block;
+  margin: 0 auto;
   padding: 24px 35px;
   font-size: 20px;
   line-height: 24px;
