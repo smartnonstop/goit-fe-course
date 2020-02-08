@@ -1,0 +1,379 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  color: #0f0101;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.page-header {
+  padding: 42px 0;
+}
+
+.site-logo {
+  display: block;
+  float: left;
+}
+
+.nav-menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu-item {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.nav-menu-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.nav-menu-item a {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0101;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-menu-item a:hover {
+  color: #1abc9c;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  max-width: 1600px;
+  position: relative;
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slides-item {
+  position: relative;
+}
+
+.slides-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.slides-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000002;
+  opacity: 0.52;
+}
+
+.slider-arrows {
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1170px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.slider-arrow {
+  position: absolute;
+  width: 104px;
+  height: 104px;
+  background-color: rgba(78, 198, 171, 0.65);
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider-arrow:hover,
+.slider-arrow:focus {
+  background-color: rgba(78, 198, 171, 1);
+}
+
+.slider-arrow-prev {
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581188635/goit-fe-course/html-css/module-05/arrow-left_nwoecs.png');
+  left: 30px;
+}
+
+.slider-arrow-next {
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581188635/goit-fe-course/html-css/module-05/arrow-right_i2sty8.png');
+  right: 30px;
+}
+
+.slides-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 790px;
+  z-index: 1;
+}
+
+.slides-name {
+  margin: 0 0 10px;
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slides-description {
+  margin: 0;
+  font-size: 24px;
+  line-height: 54px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.products-section {
+  background-color: #e9f0fd;
+  padding: 100px 0;
+}
+
+.section-name {
+  margin: 0 0 80px;
+  padding: 0;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #515151;
+  text-align: center;
+}
+
+.section-name::after {
+  content: '';
+  display: block;
+  margin: 40px auto 0;
+  width: 160px;
+  height: 7px;
+  background-color: #1abc9c;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products-list-item {
+  width: 255px;
+  float: left;
+}
+
+.products-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.product-caption {
+  background-color: #323232;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  
+}
+
+.product-name {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 900;
+  float: left;
+  padding: 7px 14px;
+}
+
+.product-name a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.product-price {
+  float: right;
+  padding: 7px 12px;
+  background-color: rgba(255, 255, 255, 0.43);
+}
+
+.product-price::before {
+  content: '$';
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+}
+
+.products-list-item:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.product-icons-list {
+  margin: 0 0 7px;
+  padding: 0;
+  list-style: none;
+}
+
+.product-icons-item {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.product-icons-item:not(:last-child) {
+  margin-right: 9px;
+}
+
+.product-icons-item:nth-child(1){
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581184245/goit-fe-course/html-css/module-05/icon-like_ww6qgz.png');
+}
+
+.product-icons-item:nth-child(2){
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581184245/goit-fe-course/html-css/module-05/icon-two-arrows_bqzvhg.png');
+}
+
+.product-icons-item:nth-child(3){
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581184245/goit-fe-course/html-css/module-05/icon-clock_xytlxz.png');
+}
+
+.btn-to-cart {
+  position: relative;
+  width: 168px;
+  border: 1px solid #ffffff;
+  padding: 0;
+  padding: 10px 10px 10px 59px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+
+.product-icons-item:hover,
+.product-icons-item:focus,
+.btn-to-cart:hover,
+.btn-to-cart:focus {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.btn-to-cart::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581184245/goit-fe-course/html-css/module-05/icon-cart_was1lh.png');
+}
+
+.footer {
+  background-color: #323232;
+  padding: 38px 0;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fefefe;
+}
+
+.footer span {
+  color: #46bfa9;
+}
+
+
+.clearix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
