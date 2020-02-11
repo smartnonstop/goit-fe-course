@@ -267,7 +267,6 @@ img {
 }
 
 .product-icons-list {
-  width: 168px;
   padding: 0;
   list-style: none;
 }
@@ -292,7 +291,7 @@ img {
   cursor: pointer;
 }
 
-.product-icons-item:not(:last-child) {
+.product-icons-item:not(:nth-child(3)) {
   margin-right: 9px;
 }
 
@@ -308,9 +307,7 @@ img {
   background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581184245/goit-fe-course/html-css/module-05/icon-clock_xytlxz.png');
 }
 
-.product-icons-item:nth-child(3){
-  margin-right: 0;
-}
+
 
 
 .btn-to-cart {
