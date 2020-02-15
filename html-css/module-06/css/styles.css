@@ -14,10 +14,29 @@ img {
   height: auto;
 }
 
-
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+@keyframes logo-appear {
+  0% {
+    transform: translateY(-200px);
+    transform: scale(1);
+    opacity: 0;
+  } 
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: rotate(0);
+    transform: scale(1);
+  } 
+
 }
 
 .navigation-header {
@@ -39,6 +58,12 @@ img {
   text-decoration: none;
   color: #95e1d3;
   font-weight: 700;
+  animation: logo-appear 0.7s linear;
+  transition: transform 0.3s linear;
+}
+
+.site-logo:hover {
+  transform: scale(1.1);
 }
 
 .nav-list {
@@ -73,7 +98,7 @@ img {
   width: 0%;
   height: 3px;
   background-color: #f38181;
-  transition: width 0.5s;
+  transition: width 0.3s linear;
 }
 
 .nav-list-item a:hover::after{
@@ -266,7 +291,7 @@ img {
 
 .team-img-wrapper {
   position: relative;
-  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
 }
 
 .overlay {
@@ -304,7 +329,7 @@ img {
   background-color: rgb(252, 227, 138);
   background-position: center;
   background-repeat: no-repeat;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s linear;
 }
 
 .social-item a:hover {
@@ -388,11 +413,14 @@ img {
   text-transform: uppercase;
   padding: 12px 32px;
   cursor: pointer;
+  transition: transform 0.2s linear;
+  
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: rgb(252, 227, 138);
+  transform: scale(1.1);
 }
 
 
