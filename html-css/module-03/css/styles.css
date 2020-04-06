@@ -48,6 +48,8 @@ img {
 .navigation-list-item a {
   display: block;
   color: #626262;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navigation-list-item a:hover,
