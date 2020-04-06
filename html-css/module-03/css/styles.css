@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.navigation-list-item {
+  display: inline-block;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 120px;
+}
+
+.navigation-list-item a {
+  display: block;
+  color: #626262;
+}
+
+.navigation-list-item a:hover,
+.navigation-list-item a:focus {
+  color: #03a9f4;
+}
+
+.posts-section {
+  padding-bottom: 70px;
+}
+
+.posts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.posts-list-item {
+  display: inline-block;
+  width: 420px;
+  margin-bottom: 134px;
+}
+
+.posts-list-item:not(:nth-child(2n)){
+  margin-right: 60px;
+} 
+
+.posts-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 50px;
+}
+
+.post-image {
+  margin-bottom: 32px;
+}
+
+.post-category {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+.post-name {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 30px;
+  list-style: 36px;
+  font-weight: 400;
+}
+
+.post-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 26px 35px;
+  background-color: transparent;
+  border: 1px solid rgb(98, 98, 98);
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(98, 98, 98);
+  cursor: pointer;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
+  border: 1px solid #03a9f4;
+  color: #03a9f4;
+}
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
