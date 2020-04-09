@@ -24,10 +24,10 @@ img {
 .container {
   width: 900px;
   margin: 0 auto;
+  padding: 70px 0;
 }
 
 .page-header {
-  padding-top: 70px;
   margin-bottom: 100px;
 }
 
@@ -56,10 +56,6 @@ img {
 .navigation-list-item a:hover,
 .navigation-list-item a:focus {
   color: #03a9f4;
-}
-
-.posts-section {
-  padding-bottom: 70px;
 }
 
 .posts-list {
