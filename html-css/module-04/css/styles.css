@@ -20,9 +20,9 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 
 .navigation {
@@ -31,6 +31,11 @@ img {
 
 .site-logo {
   float: left;
+  margin: 0;
+}
+
+.site-logo a {
+  display: block;
 }
 
 .nav-list {
@@ -115,7 +120,7 @@ img {
 
 .product-name {
   float: left;
-  padding: 12px 14px;
+  padding: 7px 14px;
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
@@ -125,7 +130,7 @@ img {
 
 .product-price {
   float: right;
-  padding: 12px 14px;
+  padding: 7px 14px;
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
