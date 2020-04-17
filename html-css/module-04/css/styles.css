@@ -22,11 +22,11 @@ img {
 .container {
   width: 1110px;
   margin: 0 auto;
-  /* padding: 0 30px; */
+  padding: 38px 0 46px;
 }
 
-.navigation {
-  padding-top: 38px;
+.site-header {
+  margin-bottom: 100px;
 }
 
 .site-logo {
@@ -36,12 +36,23 @@ img {
 
 .site-logo a {
   display: block;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #555252;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-logo a::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
 }
 
 .nav-list {
   float: right;
   margin: 0;
-  padding: 0;
+  padding: 8px 0 0;
   list-style: none;
 }
 
@@ -70,7 +81,7 @@ img {
 }
 
 .section {
-  padding-top: 100px;
+  margin-bottom: 98px;
 }
 
 .section-name {
@@ -123,6 +134,7 @@ img {
   padding: 7px 14px;
   font-size: 18px;
   line-height: 32px;
+  font-weight: 900;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -133,16 +145,13 @@ img {
   padding: 7px 14px;
   font-size: 18px;
   line-height: 32px;
+  font-weight: 900;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.43);
 }
 
 .product-price::before {
   content: "$";
-}
-
-.news-section {
-  padding-bottom: 48px;
 }
 
 .news-list {
