@@ -1,0 +1,416 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@keyframes overlay-animation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes social-hover-animation {
+  0% {
+    transform: translateY(-2px);
+    background-position: center;
+  }
+
+  50% {
+    background-position: center 7px;
+  }
+
+  100% {
+    transform: translateY(0px);
+    background-position: center;
+  }
+}
+
+:root {
+  --main-color: #999999;
+  --secondary-color:  #333333;
+  --menu-color: #95e1d3;
+  --hover-color: #f38181;
+  --main-font-size: 15px;
+  --main-line-height: 24px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  color: var(--main-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 134px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 50px;
+}
+
+.site-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--menu-color);
+  text-decoration: none;
+  transition: transform 0.4s;
+}
+
+.site-logo:hover,
+.site-logo:focus {
+  color: var(--hover-color);
+  transform: scale(1.2);
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 490px;
+  list-style: none;
+}
+
+.navigation-list-item a {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--menu-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navigation-list-item a::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  display: block;
+  width: 0px;
+  height: 3px;
+  background-color: var(--hover-color);
+  transition: width 0.3s;
+}
+
+.navigation-list-item a:hover,
+.navigation-list-item a:focus {
+  color: var(--hover-color);
+}
+
+.navigation-list-item a:hover::after,
+.navigation-list-item a:focus::after {
+  width: 100%;
+}
+
+.services-section {
+  margin-bottom: 95px;
+}
+
+.section-name {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.section-name span {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-name::after {
+  content: "";
+  display: block;
+  margin: 40px auto 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--hover-color);
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-list-item {
+  flex-basis: 380px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 80px;
+  background-position: 20px 2px;
+  background-repeat: no-repeat;
+}
+
+.services-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 98px;
+}
+
+.services-list-item:nth-child(1) {
+  background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-alarm_elqmun.png);
+}
+
+.services-list-item:nth-child(2) {
+  background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-web-design_icr9oo.png);
+}
+
+.services-list-item:nth-child(3) {
+  background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-monitor_jse9c9.png);
+}
+
+.services-list-item:nth-child(4) {
+  background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-seo_nzscnz.png);
+}
+
+.services-list-item:nth-child(5) {
+  background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-home_ivl6in.png);
+}
+
+.services-list-item:nth-child(6) {
+  background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-digital_sqruzb.png);
+}
+
+.service-name {
+  margin: 0 0 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.team-section {
+  margin-bottom: 80px;
+}
+
+.section-description {
+  margin: 0 0 90px;
+  padding: 0 130px;  
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-list-item {
+  flex: 0 0 380px;
+}
+
+.team-image-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.5s;
+  overflow: hidden;
+}
+
+.team-list-item:hover .team-image-wrapper {
+  transform: translate(-10px,-10px);
+  box-shadow: 10px 10px var(--menu-color);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+  opacity: 0;
+}
+
+.team-list-item:hover .overlay{
+  animation-name: overlay-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.social-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 1px;
+}
+
+.social-list-item a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-list-item a:hover,
+.social-list-item a:focus {
+  animation: social-hover-animation 0.3s linear 0.05s forwards;
+  background-color: #95e1d3; 
+}
+
+.social-list-item:nth-child(1) a {
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581689269/goit-fe-course/html-css/module-06/icons/fb-icon_eogo8x.png');
+}
+
+.social-list-item:nth-child(2) a {
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581689269/goit-fe-course/html-css/module-06/icons/tw-icon_w2u9ua.png');
+}
+
+.social-list-item:nth-child(3) a {
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581689269/goit-fe-course/html-css/module-06/icons/pinterest-icon_psdrwf.png');
+}
+
+.social-list-item:nth-child(4) a {
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1581689270/goit-fe-course/html-css/module-06/icons/instagram-icon_wpauwp.png');
+}
+
+.team-name {
+  margin: 0 0 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.team-position {
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.footer-text {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+}
+
+.footer-text a {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.footer-text::before {
+  content: "\00a9  ";
+}
+
+.form {
+  display: flex;
+}
+
+.form-input {
+  width: 228px;
+  height: 40px;
+  border: 1px solid rgb(231, 231, 231);
+}
+
+.form-input::placeholder {
+  text-indent: 12px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+}
+
+.form-btn {
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: var(--menu-color);
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  transform: scale(1.2);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
