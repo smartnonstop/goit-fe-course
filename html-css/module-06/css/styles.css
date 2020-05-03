@@ -76,19 +76,22 @@ img {
 }
 
 .site-logo {
+  margin: 0;
+}
+
+.site-logo a{
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--menu-color);
   text-decoration: none;
-  transition: transform 0.4s;
+  transition: color 0.4s;
 }
 
-.site-logo:hover,
-.site-logo:focus {
+.site-logo a:hover,
+.site-logo a:focus {
   color: var(--hover-color);
-  transform: scale(1.2);
 }
 
 .navigation-list {
@@ -176,39 +179,51 @@ img {
 }
 
 .services-list-item {
+  position: relative;
   flex-basis: 380px;
   flex-grow: 0;
   flex-shrink: 0;
-  padding-left: 80px;
-  background-position: 20px 2px;
-  background-repeat: no-repeat;
+  padding-left: 80px; 
 }
 
 .services-list-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 98px;
 }
 
-.services-list-item:nth-child(1) {
+.services-list-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 22px; 
+  top:2px;
+  width: 34px;
+  height: 34px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-list-item:nth-child(1)::before {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-alarm_elqmun.png);
 }
 
-.services-list-item:nth-child(2) {
+.services-list-item:nth-child(2)::before {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-web-design_icr9oo.png);
 }
 
-.services-list-item:nth-child(3) {
+.services-list-item:nth-child(3)::before {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-monitor_jse9c9.png);
 }
 
-.services-list-item:nth-child(4) {
+.services-list-item:nth-child(4)::before {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-seo_nzscnz.png);
 }
 
-.services-list-item:nth-child(5) {
+.services-list-item:nth-child(5)::before {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-home_ivl6in.png);
 }
 
-.services-list-item:nth-child(6) {
+.services-list-item:nth-child(6)::before {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-digital_sqruzb.png);
 }
 
@@ -216,6 +231,7 @@ img {
   margin: 0 0 16px;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.2;
   color: var(--secondary-color);
   text-transform: uppercase;
