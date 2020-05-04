@@ -190,34 +190,40 @@ img {
 }
 
 .service-icon {
+  display: flex;
+  justify-content: center;
   flex: 0 0 80px;
+}
+
+.icon {
+  width: 34px;
   height: 34px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
-.services-list-item:nth-child(1) .service-icon {
+.services-list-item:nth-child(1) .icon {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-alarm_elqmun.png);
 }
 
-.services-list-item:nth-child(2) .service-icon {
+.services-list-item:nth-child(2) .icon {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-web-design_icr9oo.png);
 }
 
-.services-list-item:nth-child(3) .service-icon {
+.services-list-item:nth-child(3) .icon {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-monitor_jse9c9.png);
 }
 
-.services-list-item:nth-child(4) .service-icon {
+.services-list-item:nth-child(4) .icon {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-seo_nzscnz.png);
 }
 
-.services-list-item:nth-child(5) .service-icon {
+.services-list-item:nth-child(5) .icon {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-home_ivl6in.png);
 }
 
-.services-list-item:nth-child(6) .service-icon {
+.services-list-item:nth-child(6) .icon {
   background-image: url(https://res.cloudinary.com/duxcfhlg6/image/upload/v1581682222/goit-fe-course/html-css/module-06/icons/icon-digital_sqruzb.png);
 }
 
