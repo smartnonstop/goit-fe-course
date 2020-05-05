@@ -3,7 +3,6 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Modern Browsers */
@@ -14,7 +13,6 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v14-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
@@ -25,7 +23,6 @@
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-slab-v11-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
@@ -36,7 +33,6 @@
   font-family: 'Barlow Semi Condensed';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/barlow-semi-condensed-v5-latin-italic.eot'); /* IE9 Compat Modes */
   src: local('Barlow Semi Condensed Italic'), local('BarlowSemiCondensed-Italic'),
        url('../fonts/barlow-semi-condensed-v5-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/barlow-semi-condensed-v5-latin-italic.woff') format('woff');
@@ -47,7 +43,6 @@
   font-family: 'Satisfy';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/satisfy-v10-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Satisfy Regular'), local('Satisfy-Regular'),
        url('../fonts/satisfy-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/satisfy-v10-latin-regular.woff') format('woff');
