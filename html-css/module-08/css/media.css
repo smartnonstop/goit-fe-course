@@ -1,0 +1,126 @@
+@media (max-width: 47.9375rem) {
+
+  .partner-list-item:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
+  .partner-list {
+    margin-bottom: 1.875rem;
+  }
+
+}
+
+@media (min-width: 48rem) {
+  .container {
+    width: 41.25rem;
+    padding: 0;
+  }
+
+  .page-header {
+    padding-bottom: 14.625rem;
+    background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587749851/goit-fe-course/html-css/module-08/tablet/header_bg_tablet_rtalnx.jpg');
+  }
+
+  .site-logo {
+    display: block;
+  }
+
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.375rem;
+    margin-bottom: 9.25rem;
+  }
+
+  .navigation-list {
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
+
+  .header-name {
+    margin: 0 auto 2.5rem;
+    width: 33.25rem;
+    font-size: 3.25rem;
+  }
+
+  .header-description {
+    width: 100%;
+    margin: 0 auto 2.375rem;
+    font-size: 1.5rem;
+  }
+
+  .header-find-btn {
+    width: auto;
+  }
+
+  .section {
+    padding: 4.75rem 0 2.5rem;
+  }
+
+  .section-name {
+    margin-bottom: 2.375rem;
+  }
+
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partner-list-item {
+    width: 14.75rem;
+    margin: 0 0.625rem;
+  }
+
+  .partner-description {
+    font-size: 0.875rem;
+  }
+
+  .other-partner-btn {
+    width: auto;
+  }
+
+  .partner-list {
+    margin-bottom: 2.375rem;
+  }
+
+}
+
+
+
+@media (min-width: 48rem) and (max-width: 58.6875rem) {
+  
+  .partner-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 3.625rem;
+  }
+
+}
+
+
+@media (min-width: 58.75rem) {
+
+  .container {
+    width: 58.75rem;
+  }
+
+  .page-header {
+    background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1589356054/goit-fe-course/html-css/module-08/bg-image_hzbyfi.jpg');
+  }
+
+  .partner-list-item {
+    width: 13.875rem;
+    margin: 0;
+  }
+
+  .partner-list-item:not(:nth-child(4n)){
+    margin-right: 0.9375rem;
+  }
+
+  .partner-list {
+    margin-bottom: 2.375rem;
+  }
+  
+}
+
