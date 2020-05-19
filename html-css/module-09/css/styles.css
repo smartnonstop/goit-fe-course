@@ -1,0 +1,254 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --first-font: 'Montserrat', sans-serif;
+  --second-font: 'Roboto', sans-serif;
+  --header-color: #ffffff;
+  --btn-color: #ff4e50;
+  --section-primary-color: #333333;
+  --section-secondary-color: #666666;
+}
+
+body {
+  font-family: var(--first-font);
+  color: var(--section-primary-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+.page-header {
+  padding-bottom: 8.625rem;
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587742465/goit-fe-course/html-css/module-08/mob/header_bg_mob_uu6qyd.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.page-nav {
+  margin-bottom: 2.1875rem;
+}
+
+.site-logo {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--header-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.25rem 0 0 0;
+  list-style: none;
+}
+
+.navigation-list-item button{
+  display: block;
+  padding: 0.75rem 1.125rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--header-color);
+  text-decoration: none;
+  border-radius: 1.875rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navigation-list-item.bordered button {
+  border: 2px solid rgb(255, 255, 255);
+  transition: color 0.3s, border 0.3s;
+}
+
+.header-name {
+  margin: 0 0 1.25rem;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--header-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-description {
+  width: 13.75rem;
+  margin: 0 auto 1.25rem;
+  font-family: var(--second-font);
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: var(--header-color);
+  text-align: center;
+}
+
+.header-find-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.875rem 1.375rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--header-color);
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 1.875rem;
+  background-color: var(--btn-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-find-btn:hover,
+.header-find-btn:focus {
+  background-color: transparent;
+  border: 2px solid var(--btn-color);
+}
+
+.section {
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.section-name {
+  margin-bottom: 1.125rem;
+}
+.section-name h2 {
+  margin: 0;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.partner-img {
+  text-align: center;
+  margin-bottom: 1.125rem;
+}
+
+.partner-img-wrapper {
+  position: relative;
+  display: inline-block;
+  perspective: 62.5rem;
+}
+
+.partner-img-wrapper img {
+  border-radius: 50%;
+}
+
+.partner-img-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.5s;
+}
+
+.partner-img-wrapper:hover::after {
+  transform: rotateY(360deg);
+}
+
+.partner-list-item:nth-child(1) .partner-img-wrapper::after {
+  background-color: rgb(255, 78, 80);
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587747449/goit-fe-course/html-css/module-08/mob/icons/icon-tv_iicurj.png');
+}
+
+.partner-list-item:nth-child(2) .partner-img-wrapper::after {
+  background-color: rgb(255, 165, 7);
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587747449/goit-fe-course/html-css/module-08/mob/icons/icon-mixture_mrmds4.png');
+}
+
+.partner-list-item:nth-child(3) .partner-img-wrapper::after {
+  background-color: rgb(28, 215, 173);
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587747449/goit-fe-course/html-css/module-08/mob/icons/icon-cup_fn0gz3.png');
+}
+
+.partner-list-item:nth-child(4) .partner-img-wrapper::after {
+  background-color: rgb(78, 115, 219);
+  background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587747449/goit-fe-course/html-css/module-08/mob/icons/icon-plane_a6eqik.png');
+}
+
+.partner-name {
+  margin: 0 0 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+}
+
+.partner-description {
+  margin: 0 auto;
+  width: 14.125rem;
+  font-family: var(--second-font);
+  font-weight: 300;
+  color: var(--section-secondary-color);
+  text-align: center;
+}
+
+.other-partner-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.875rem 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--btn-color);
+  text-align: center;
+  border: 2px solid var(--btn-color);
+  border-radius: 1.875rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.other-partner-btn:hover,
+.other-partner-btn:focus {
+  background-color: var(--btn-color);
+  color: var(--header-color);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

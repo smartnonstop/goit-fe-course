@@ -1,0 +1,107 @@
+  
+@media (max-width: 47.9375rem) {
+
+  .site-logo {
+    text-align: center;
+  }
+
+  .navigation-col {
+    margin-bottom: 7.375rem;
+  }
+
+  .partner-list-item:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
+  .partner-list {
+    margin-bottom: 1.875rem;
+  }
+
+}
+
+@media (min-width: 48rem) {
+
+  .page-header {
+    padding-bottom: 14.625rem;
+    background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1587749851/goit-fe-course/html-css/module-08/tablet/header_bg_tablet_rtalnx.jpg');
+  }
+
+  .navigation-list {
+    justify-content: flex-end;
+  }
+
+  .site-logo {
+    display: block;
+  }
+
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.375rem;
+    margin-bottom: 9.25rem;
+  }
+
+  .navigation-list {
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
+
+  .header-name {
+    margin: 0 auto 2.5rem;
+    font-size: 3.25rem;
+  }
+
+  .header-description {
+    width: 100%;
+    margin: 0 auto 2.375rem;
+    font-size: 1.5rem;
+  }
+
+  .header-find-btn {
+    width: auto;
+  }
+
+  .section {
+    padding-top: 4.75rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .section-name {
+    margin-bottom: 2.375rem;
+  }
+
+  .partner-description {
+    font-size: 0.875rem;
+  }
+
+  .other-partner-btn {
+    width: auto;
+  }
+
+  .partner-list {
+    margin-bottom: 2.375rem;
+  }
+
+}
+
+@media (min-width: 48rem) and (max-width: 58.6875rem) {
+
+  .partner-list [class*="col-"]:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 3.625rem;
+  }
+
+}
+
+@media (min-width: 58.75rem) {
+
+  .page-header {
+    background-image: url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1589356054/goit-fe-course/html-css/module-08/bg-image_hzbyfi.jpg');
+  }
+
+  .partner-list {
+    margin-bottom: 2.375rem;
+  }
+  
+}
