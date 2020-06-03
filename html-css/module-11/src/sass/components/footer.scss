@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.875rem;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.footer__text {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: map-get($colors, secondary);
+
+  & a {
+    color: map-get($colors, section-line);
+    text-decoration: none;
+  }
+
+  &::before {
+    content: "\00a9  ";
+  }
+
+}
+
+.form {
+  display: flex;
+}
+
+.form__input {
+  width: 14.25rem;
+  height: 2.5rem;
+  border: 1px solid map-get($colors, input-border);
+
+  &::placeholder {
+    text-indent: 0.75rem;
+    font-weight: 300;
+    font-style: italic;
+    color: map-get($colors, input-placeholder);
+  }
+
+}
+
+.form__btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: map-get($colors, footer-button);
+  cursor: pointer;
+  transition: transform 0.3s linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+}

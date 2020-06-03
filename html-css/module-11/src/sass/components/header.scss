@@ -1,0 +1,127 @@
+.header {
+  min-height: 62.5rem;
+  background-image: linear-gradient(to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+  url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1590775016/goit-fe-course/html-css/module-10/header-bg_svmeda.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3.375rem;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    & {
+      background-image: linear-gradient(to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url('https://res.cloudinary.com/duxcfhlg6/image/upload/v1590775016/goit-fe-course/html-css/module-10/header-bg_2x_a21oun.jpg');
+    }
+  }
+}
+
+.navigation {
+  margin-bottom: 11.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 3.125rem;
+}
+
+.navigation__logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: map-get($colors, menu);
+  text-decoration: none;
+  transition: color 0.4s;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, hover);
+  }
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 38.75rem;
+  list-style: none;
+}
+
+.navigation-list__link {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: map-get($colors, menu);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.75rem;
+    display: block;
+    width: 0rem;
+    height: 0.1875rem;
+    background-color: map-get($colors, hover);
+    transition: width 0.3s;
+  }
+
+  .navigation-list__item:not(:nth-last-child(-n + 2)) &:hover,
+  .navigation-list__item:not(:nth-last-child(-n + 2)) &:focus {
+    color: map-get($colors, hover);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+
+.navigation-list__icon {
+  transition: fill 0.3s;
+  fill: map-get($colors, menu);
+
+  &:hover,
+  &:focus {
+    fill: map-get($colors, hover);
+  } 
+}
+
+.header__name {
+  max-width: 51.25rem;
+  margin: 0 auto 8.125rem;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: map-get($colors, menu);
+
+  & span {
+    display: block;
+    margin-top: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.375rem;
+    line-height: 8.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+}
+
+.header__button {
+  display: block;
+  max-width: 11.25rem;
+  margin: 0 auto;
+  padding: 0.9375rem 1.875rem;
+  border: 3px solid rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: map-get($colors, menu);
+}

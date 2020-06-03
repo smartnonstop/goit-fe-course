@@ -1,0 +1,100 @@
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-list__item {
+  flex: 0 0 23.75rem;
+
+  &:hover .team-list__image-wrapper {
+    transform: translate(-0.625rem,-0.625rem);
+    box-shadow: 0.625rem 0.625rem map-get($colors, footer-button);
+  }
+
+  &:hover .team-list__overlay{
+    animation-name: overlay-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+}
+
+.team-list__image-wrapper {
+  position: relative;
+  margin-bottom: 1.875rem;
+  transition: transform 0.3s, box-shadow 0.5s;
+  overflow: hidden;
+}
+
+.team-list__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+  opacity: 0;
+}
+
+.social-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 0.0625rem;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.4375rem;
+  height: 3.4375rem;
+  background-color: map-get($colors, hover);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  &:hover,
+  &:focus {
+    animation: social-hover-animation 0.3s linear 0.05s forwards;
+    background-color: map-get($colors, section-line);
+  }
+
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
+    fill: map-get($colors, menu);
+  }
+
+}
+
+.social-list__icon {
+  fill: map-get($colors, section-line);
+}
+
+.team-list__name {
+  margin: 0 0 0.875rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: map-get($colors, secondary);
+}
+
+.team-list__position {
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}

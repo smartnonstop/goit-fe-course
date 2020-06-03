@@ -1,0 +1,17 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+@import 'helpers/animation';
+@import 'helpers/fonts';
+
+@import 'normalize';
+@import 'base';
+
+@import 'components/header';
+@import 'components/section';
+@import 'components/services';
+@import 'components/team';
+@import 'components/footer';

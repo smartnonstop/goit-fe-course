@@ -1,0 +1,39 @@
+.section {
+  margin-bottom: 5.625rem;
+}
+
+.section__name {
+  margin-top: 0;
+  margin-bottom: 4.0625rem;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: map-get($colors, secondary);
+
+  & span {
+    display: block;
+    margin-top: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 2.5rem auto 0;
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: map-get($colors, section-line);
+  }
+
+}
+
+.section__description {
+  margin: 0 0 5.625rem;
+  padding: 0 8.125rem;  
+  text-align: center;
+}
